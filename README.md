@@ -275,7 +275,9 @@ How this analysis would move from notebook to production lending policy:
 | **3** | 3–6 months | Increase loss reserves, retrain model with new data, run portfolio concentration analysis |
 | **4** | 6–12 months | Build an early-warning system, develop intervention strategies, integrate into portfolio management |
 
+
 ---
+
 ## 🧠 Skills Demonstrated
 
 | Skill | Applied In This Project |
@@ -285,7 +287,7 @@ How this analysis would move from notebook to production lending policy:
 | Risk Scoring | Converted model probabilities into a 0–100 risk score with three actionable tiers (Low / Medium / High) |
 | Business Translation | Quantified the financial impact of a selective approval strategy — $47.4M in projected annual savings |
 | Data Visualization | Built two stakeholder-facing Tableau dashboards (Executive Overview, Credit Risk Analysis) |
-| Technical
+| Technical Communication | Documented a 49-step, fully reproducible analysis with markdown explanations at every stage |
 
 ---
 
