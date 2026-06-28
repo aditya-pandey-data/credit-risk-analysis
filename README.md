@@ -284,7 +284,7 @@ How this analysis would move from notebook to production lending policy:
 | Skill | Applied In This Project |
 |---|---|
 | Exploratory Data Analysis | Statistical profiling across 12 dimensions — missing value treatment, outlier detection, cross-tabulation of default rate against categorical and numerical features |
-| Predictive Modeling | Logistic Regression with ROC-AUC of 0.78+, evaluated using accuracy, precision, recall, and confusion matrix |
+| Built and evaluated a Logistic Regression model to predict loan default risk using accuracy, precision, recall, and a confusion matrix |
 | Risk Scoring | Converted model probabilities into a 0–100 risk score with three actionable tiers (Low / Medium / High) |
 | Business Translation | Quantified the financial impact of a selective approval strategy — $47.4M in projected annual savings |
 | Data Visualization | Built two stakeholder-facing Tableau dashboards (Executive Overview, Credit Risk Analysis) |
