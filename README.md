@@ -81,7 +81,7 @@ The **Credit Risk Analysis** dashboard drills into *why* borrowers default — d
 
 ![Credit Risk Analysis Dashboard](./dashboards/Credit_Risk_Analysis.png)
 
-> 📄 The complete stakeholder presentation deck is available as [`Credit-Risk-Analysis.pdf`](.presentation/Credit-Risk-Analysis.pdf).
+> 📄 The complete stakeholder presentation deck is available as [`Credit-Risk-Analysis.pdf`](./presentation/Credit-Risk-Analysis.pdf).
 
 ---
 
