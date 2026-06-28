@@ -9,8 +9,10 @@
 [![scikit-learn](https://img.shields.io/badge/scikit--learn-1.x-F7931E?style=flat&logo=scikit-learn&logoColor=white)](https://scikit-learn.org/)
 [![Tableau](https://img.shields.io/badge/Tableau-Dashboard-E97627?style=flat&logo=tableau&logoColor=white)](#-dashboards)
 [![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-F37626?style=flat&logo=jupyter&logoColor=white)](#-repository-structure)
+[![License](https://img.shields.io/badge/License-MIT-green?style=flat)](LICENSE)
 
 </div>
+
 ---
 
 ## 📋 Table of Contents
@@ -75,11 +77,11 @@ Two Tableau dashboards translate the analysis into stakeholder-ready visuals.
 
 The **Executive Overview** dashboard gives a portfolio-level snapshot — total borrowers, default rate, average loan amount, average interest rate, and average income, along with the loan status split, loan intent distribution, home ownership breakdown, risk category distribution, and loan volume by grade.
 
-![Executive Overview Dashboard](./dashboards/Executive_Overview.png)
+![Executive Overview Dashboard](./images/Executive_Overview.png)
 
 The **Credit Risk Analysis** dashboard drills into *why* borrowers default — default rate by home ownership, average interest rate and loan burden by loan grade, default rate by prior default history, an income-vs-loan-burden scatter plot, default rate by loan grade, and default rate by loan intent.
 
-![Credit Risk Analysis Dashboard](./dashboards/Credit_Risk_Analysis.png)
+![Credit Risk Analysis Dashboard](./images/Credit_Risk_Analysis.png)
 
 > 📄 The complete stakeholder presentation deck is available as [`Credit-Risk-Analysis.pdf`](./Credit-Risk-Analysis.pdf).
 
@@ -214,10 +216,11 @@ credit-risk-analysis/
 │   ├── raw_credit_risk_dataset.csv    # Original, unprocessed dataset
 │   └── credit_risk_clean.csv          # Cleaned dataset + Risk Score & Risk Category columns
 ├── credit_risk_analysis.ipynb         # Full analysis notebook (50+ steps)
-├── dashboards/
+├── images/
 │   ├── Executive_Overview.png
 │   └── Credit_Risk_Analysis.png
 ├── Credit-Risk-Analysis.pdf           # Stakeholder-facing presentation deck
+├── credit_risk_analysis.twbx          # Tableau packaged workbook (dashboards + data)
 ├── requirements.txt                   # Python dependencies
 └── LICENSE                            # MIT License
 ```
@@ -239,6 +242,16 @@ jupyter notebook credit_risk_analysis.ipynb
 ```
 
 Run all cells top to bottom — the notebook is fully reproducible and will regenerate `credit_risk_clean.csv` from the raw dataset.
+
+### Opening the Tableau Dashboards
+
+The interactive dashboards are packaged in `credit_risk_analysis.twbx` (Tableau Packaged Workbook), with the data source bundled inside — no setup required.
+
+1. Install [Tableau Desktop](https://www.tableau.com/products/desktop) or [Tableau Public](https://public.tableau.com/) (free)
+2. Open `credit_risk_analysis.twbx`
+3. Both dashboards (Executive Overview and Credit Risk Analysis) will load immediately with full interactivity
+
+> 💡 If you don't have Tableau installed, the static dashboard exports are already embedded above in the [Dashboards](#-dashboards) section — no extra steps needed to view them.
 
 ---
 
