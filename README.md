@@ -57,7 +57,7 @@ Lenders need to balance two competing risks: **rejecting good borrowers** (lost 
 
 ## 🔄 Project Workflow
 
-The notebook follows **49 sequential, documented steps**, grouped into six phases:
+The notebook follows 50 sequential, documented steps, grouped into six phases:
 
 | Phase | Steps | What Happens |
 |---|---|---|
@@ -127,8 +127,8 @@ Exploratory EDA  →  Predictive Model  →  Risk Scoring  →  Business Impact
 | Metric | Score | What it means |
 |---|---|---|
 | Accuracy | 79% | Overall correct classification rate |
-| Precision (defaulters) | 51% | When the model flags a loan as "high risk," it's right 51% of the time |
-| Recall (defaulters) | 78% | The model correctly catches 78% of all actual defaulters in the test set |
+| Precision (defaulters) | 51% | When the model predicts a borrower will default, it is correct 51% of the time |
+| Recall (defaulters) | 78% |The model correctly identifies 78% of borrowers who actually default in the test set |
 | Precision (safe loans) | 93% | When the model flags a loan as "safe," it's right 93% of the time |
 | Recall (safe loans) | 79% | The model correctly identifies 79% of all actual safe loans |
 
@@ -182,8 +182,8 @@ Based on the risk analysis of 32,409 loans totaling **$310.9M**, the following r
 **🔴 Reject High Risk** (7,921 loans | 60.5% default rate)
 - **Decision:** Reject, or require substantial collateral
 - **Rationale:** A 60.5% default rate makes unsecured lending unviable at this tier
-- **Exception:** Only consider approval if collateral covers 150%+ of the loan amount
-
+- **Exception:** Exception: Consider additional collateral or enhanced underwriting for exceptional cases
+  
 ### 2. Financial Impact of Selective Approval
 
 Implementing selective approval (Low + Medium Risk only) is projected to deliver:
@@ -201,8 +201,7 @@ Implementing selective approval (Low + Medium Risk only) is projected to deliver
 2. Update the underwriting approval matrix by risk tier
 3. Adjust interest rate pricing structure within 30 days
 4. Monitor actual vs. predicted defaults monthly
-5. Retrain the model quarterly with new default data
-
+5. Retrain the model periodically as new loan performance data becomes available
 ---
 
 ## 📁 Repository Structure
@@ -239,8 +238,7 @@ pip install -r requirements.txt
 # 3. Launch the notebook
 jupyter notebook credit_risk_analysis.ipynb
 ```
-
-Run all cells top to bottom — the notebook is fully reproducible and will regenerate `credit_risk_clean.csv` from the raw dataset.
+Run all cells from top to bottom — the notebook is fully reproducible and will regenerate the cleaned dataset (credit_risk_clean.csv) from the raw dataset.
 
 ### Opening the Tableau Dashboards
 
@@ -273,7 +271,7 @@ How this analysis would move from notebook to production lending policy:
 |---|---|---|
 | **1** | 0–30 days | Deploy risk scoring, update underwriting matrix, adjust interest rate pricing by tier |
 | **2** | 1–3 months | Monitor actual vs. predicted defaults, flag borderline cases, implement automated risk alerts |
-| **3** | 3–6 months | Increase loss reserves, retrain model with new data, run portfolio concentration analysis |
+| **3** | 3–6 months | Retrain the model with new data, evaluate portfolio performance, and run portfolio concentration analysis |
 | **4** | 6–12 months | Build an early-warning system, develop intervention strategies, integrate into portfolio management |
 
 
@@ -283,12 +281,12 @@ How this analysis would move from notebook to production lending policy:
 
 | Skill | Applied In This Project |
 |---|---|
-| Exploratory Data Analysis | Statistical profiling across 12 dimensions — missing value treatment, outlier detection, cross-tabulation of default rate against categorical and numerical features |
+| Exploratory Data Analysis | Statistical profiling of borrower and loan characteristics — including missing value treatment, outlier detection, and cross-tabulation of default rate across categorical and numerical features.|
 | Predictive Modeling | Built and evaluated a Logistic Regression model to predict loan default risk using accuracy, precision, recall, and a confusion matrix |
 | Risk Scoring | Converted model probabilities into a 0–100 risk score with three actionable tiers (Low / Medium / High) |
 | Business Translation | Quantified the financial impact of a selective approval strategy — $47.4M in projected annual savings |
 | Data Visualization | Built two stakeholder-facing Tableau dashboards (Executive Overview, Credit Risk Analysis) |
-| Technical Communication | Documented a 49-step, fully reproducible analysis with markdown explanations at every stage |
+| Technical Communication | Documented a 50-step, fully reproducible analysis with markdown explanations at every stage |
 
 ---
 
