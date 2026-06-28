@@ -9,7 +9,6 @@
 [![scikit-learn](https://img.shields.io/badge/scikit--learn-1.x-F7931E?style=flat&logo=scikit-learn&logoColor=white)](https://scikit-learn.org/)
 [![Tableau](https://img.shields.io/badge/Tableau-Dashboard-E97627?style=flat&logo=tableau&logoColor=white)](#-dashboards)
 [![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-F37626?style=flat&logo=jupyter&logoColor=white)](#-repository-structure)
-[![License](https://img.shields.io/badge/License-MIT-green?style=flat)](LICENSE)
 
 </div>
 
