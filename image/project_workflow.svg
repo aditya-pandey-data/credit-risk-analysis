@@ -1,0 +1,73 @@
+<svg viewBox="0 0 2300 1000" xmlns="http://www.w3.org/2000/svg" font-family="Helvetica, Arial, sans-serif">
+  <rect width="2300" height="1000" fill="#0d1117"/>
+
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="9" refY="3.5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L9,3.5 L0,7 Z" fill="#8b949e"/>
+    </marker>
+    <filter id="glow1" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Raw Data -->
+  <rect x="60" y="300" width="400" height="180" rx="14" fill="#0d1320" stroke="#4d9fff" stroke-width="3" filter="url(#glow1)"/>
+  <text x="260" y="375" fill="#f0f6fc" font-size="30" font-weight="700" text-anchor="middle">Raw Loan Data</text>
+  <text x="260" y="412" fill="#9198a1" font-size="20" text-anchor="middle">32,409 applications, CSV</text>
+
+  <path d="M460,390 L660,390" stroke="#8b949e" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+
+  <!-- Data Cleaning -->
+  <rect x="660" y="300" width="400" height="180" rx="14" fill="#0d2018" stroke="#3fd968" stroke-width="3" filter="url(#glow1)"/>
+  <text x="860" y="375" fill="#f0f6fc" font-size="30" font-weight="700" text-anchor="middle">Data Cleaning</text>
+  <text x="860" y="412" fill="#9198a1" font-size="20" text-anchor="middle">Median imputation, drop invalid rows</text>
+
+  <path d="M1060,390 L1260,390" stroke="#8b949e" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+
+  <!-- Clean Dataset -->
+  <rect x="1260" y="300" width="400" height="180" rx="14" fill="#1f1605" stroke="#f0b429" stroke-width="3" filter="url(#glow1)"/>
+  <text x="1460" y="365" fill="#f0f6fc" font-size="30" font-weight="700" text-anchor="middle">Clean Dataset</text>
+  <text x="1460" y="400" fill="#9198a1" font-size="20" text-anchor="middle">credit_risk_clean.csv</text>
+  <text x="1460" y="426" fill="#9198a1" font-size="20" text-anchor="middle">12 features, 21.87% default</text>
+
+  <!-- Split arrows to EDA / Model Building -->
+  <path d="M1660,330 L1900,160" stroke="#8b949e" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+  <path d="M1660,450 L1900,620" stroke="#8b949e" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+
+  <!-- Exploratory Analysis -->
+  <rect x="1900" y="60" width="400" height="180" rx="14" fill="#1d1029" stroke="#a96bff" stroke-width="3" filter="url(#glow1)"/>
+  <text x="2100" y="135" fill="#f0f6fc" font-size="30" font-weight="700" text-anchor="middle">Exploratory Analysis</text>
+  <text x="2100" y="170" fill="#9198a1" font-size="20" text-anchor="middle">Default rate by grade,</text>
+  <text x="2100" y="196" fill="#9198a1" font-size="20" text-anchor="middle">ownership, and intent</text>
+
+  <!-- Model Building -->
+  <rect x="1900" y="540" width="400" height="180" rx="14" fill="#241405" stroke="#ff9636" stroke-width="3" filter="url(#glow1)"/>
+  <text x="2100" y="615" fill="#f0f6fc" font-size="30" font-weight="700" text-anchor="middle">Model Building</text>
+  <text x="2100" y="650" fill="#9198a1" font-size="20" text-anchor="middle">Logistic regression,</text>
+  <text x="2100" y="676" fill="#9198a1" font-size="20" text-anchor="middle">balanced class weights</text>
+
+  <!-- Converge into Risk Scoring -->
+  <path d="M1900,200 L1480,800" stroke="#8b949e" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+  <path d="M1900,680 L1660,800" stroke="#8b949e" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+
+  <!-- Risk Scoring -->
+  <rect x="1260" y="800" width="400" height="180" rx="14" fill="#240a0a" stroke="#ff5f56" stroke-width="3" filter="url(#glow1)"/>
+  <text x="1460" y="875" fill="#f0f6fc" font-size="30" font-weight="700" text-anchor="middle">Risk Scoring</text>
+  <text x="1460" y="910" fill="#9198a1" font-size="20" text-anchor="middle">0–100 score, Low / Medium / High</text>
+
+  <path d="M1260,890 L1060,890" stroke="#8b949e" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+
+  <!-- Business Translation -->
+  <rect x="660" y="800" width="400" height="180" rx="14" fill="#0d2018" stroke="#3fd968" stroke-width="3" filter="url(#glow1)"/>
+  <text x="860" y="875" fill="#f0f6fc" font-size="30" font-weight="700" text-anchor="middle">Business Translation</text>
+  <text x="860" y="910" fill="#9198a1" font-size="20" text-anchor="middle">Approval strategy, $47.4M saved</text>
+
+  <path d="M660,890 L460,890" stroke="#8b949e" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+
+  <!-- Tableau Dashboards -->
+  <rect x="60" y="800" width="400" height="180" rx="14" fill="#0a1a2e" stroke="#4d9fff" stroke-width="3" filter="url(#glow1)"/>
+  <text x="260" y="875" fill="#f0f6fc" font-size="30" font-weight="700" text-anchor="middle">Tableau Dashboards</text>
+  <text x="260" y="910" fill="#9198a1" font-size="20" text-anchor="middle">Executive Overview, Risk Analysis</text>
+
+</svg>
