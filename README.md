@@ -69,18 +69,17 @@ The notebook follows **49 sequential, documented steps**, grouped into six phase
 | **6. Business Translation** | 48–49 | Quantify portfolio-level financial impact and turn the analysis into concrete lending recommendations |
 
 ---
-
 ## 📊 Dashboards
 
 Two Tableau dashboards translate the analysis into stakeholder-ready visuals.
 
 The **Executive Overview** dashboard gives a portfolio-level snapshot — total borrowers, default rate, average loan amount, average interest rate, and average income, along with the loan status split, loan intent distribution, home ownership breakdown, risk category distribution, and loan volume by grade.
 
-![Executive Overview Dashboard](./images/Executive_Overview.png)
+![Executive Overview Dashboard](./dashboards/Executive_Overview.png)
 
 The **Credit Risk Analysis** dashboard drills into *why* borrowers default — default rate by home ownership, average interest rate and loan burden by loan grade, default rate by prior default history, an income-vs-loan-burden scatter plot, default rate by loan grade, and default rate by loan intent.
 
-![Credit Risk Analysis Dashboard](./images/Credit_Risk_Analysis.png)
+![Credit Risk Analysis Dashboard](./dashboards/Credit_Risk_Analysis.png)
 
 > 📄 The complete stakeholder presentation deck is available as [`Credit-Risk-Analysis.pdf`](./Credit-Risk-Analysis.pdf).
 
