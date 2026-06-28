@@ -122,16 +122,17 @@ Exploratory EDA  →  Predictive Model  →  Risk Scoring  →  Business Impact
 
 ## 📈 Model Performance
 
-**Logistic Regression** was selected for its interpretable coefficients, native probability outputs (needed for risk scoring), and status as an industry standard in credit modeling.
+**Logistic Regression** was selected for its interpretable coefficients, native probability outputs (needed for risk scoring), and status as an industry standard in credit modeling. The model was trained with `class_weight='balanced'` to counter the dataset's class imbalance (~78% non-default vs. ~22% default) and prioritize catching actual defaulters.
 
 | Metric | Score | What it means |
 |---|---|---|
-| **Accuracy** | ~85% | Overall correct classification rate |
-| **Precision** | **86%** | When the model flags a loan as "safe," it's right 86% of the time — protects portfolio quality |
-| **Recall** | **44%** | Intentionally conservative — the goal isn't to catch every defaulter, but to avoid approving high-risk loans |
-| **ROC-AUC** | **0.78+** | Strong discriminative power between defaulters and non-defaulters |
+| Accuracy | 79% | Overall correct classification rate |
+| Precision (defaulters) | 51% | When the model flags a loan as "high risk," it's right 51% of the time |
+| Recall (defaulters) | 78% | The model correctly catches 78% of all actual defaulters in the test set |
+| Precision (safe loans) | 93% | When the model flags a loan as "safe," it's right 93% of the time |
+| Recall (safe loans) | 79% | The model correctly identifies 79% of all actual safe loans |
 
-> 💡 **Why precision over recall?** In lending, a missed "safe" classification is more costly to false-flag than a missed defaulter — the risk tiers (below) are designed to catch borderline cases that a single accuracy number would hide.
+> 💡 **Why recall over precision for defaulters?** With `class_weight='balanced'`, the model is tuned to minimize missed defaulters rather than overall accuracy. In lending, a missed defaulter (false negative) is typically costlier than an unnecessary manual review of a safe borrower (false positive) — so trading some precision for higher recall on the minority class is the right call here. This trade-off is also why the Risk Segmentation tiers (below) exist: they let the business apply graduated decisions instead of relying on a single binary cutoff.
 
 ---
 
