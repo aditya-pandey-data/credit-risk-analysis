@@ -63,10 +63,10 @@ The notebook follows **49 sequential, documented steps**, grouped into six phase
 |---|---|---|
 | **1. Data Loading** | 1–5 | Import libraries, load the raw CSV, inspect shape/columns/dtypes |
 | **2. Data Cleaning** | 6–22 | Handle missing values (median imputation), remove duplicates, remove unrealistic entries (age > 100, employment length > 60 yrs) |
-| **3. Exploratory Data Analysis** | 23–35 | Examine target variable distribution, cross-tabulate default rate against home ownership, loan intent, loan grade, and prior default history; correlation analysis |
-| **4. Model Building** | 36–45 | Encode categorical variables, split train/test, train Logistic Regression, evaluate with accuracy/confusion matrix/classification report, extract feature importance |
-| **5. Risk Scoring** | 46–47 | Convert predicted probabilities into a 0–100 Risk Score, bucket into Low / Medium / High Risk tiers, define an approval strategy per tier |
-| **6. Business Translation** | 48–49 | Quantify portfolio-level financial impact and turn the analysis into concrete lending recommendations |
+| **3. Exploratory Data Analysis** | 23–35  | Examine target variable distribution, cross-tabulate default rate against home ownership, loan intent, loan grade, and prior default history; correlation analysis |
+| **4. Model Building** | 36–45  | Encode categorical variables, split train/test, train Logistic Regression, evaluate with accuracy/confusion matrix/classification report, extract feature importance |
+| **5. Risk Scoring** | 46–47  | Convert predicted probabilities into a 0–100 Risk Score, bucket into Low / Medium / High Risk tiers, define an approval strategy per tier |
+| **6. Business Translation** | 48–49  | Quantify portfolio-level financial impact and turn the analysis into concrete lending recommendations |
 
 ---
 ## 📊 Dashboards
