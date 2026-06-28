@@ -207,7 +207,7 @@ credit-risk-analysis/
 │   ├── raw_credit_risk_dataset.csv    # Original, unprocessed dataset
 │   └── credit_risk_clean.csv          # Cleaned dataset + Risk Score & Risk Category columns
 ├── credit_risk_analysis.ipynb         # Full analysis notebook (50+ steps)
-├── images/
+├── dashboards/
 │   ├── Executive_Overview.png
 │   └── Credit_Risk_Analysis.png
 ├── Credit-Risk-Analysis.pdf           # Stakeholder-facing presentation deck
