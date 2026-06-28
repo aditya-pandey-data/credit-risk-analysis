@@ -1,4 +1,15 @@
+<div align="center">
+
 # 💳 Credit Risk Analysis & Loan Default Prediction
+
+</div>
+
+<div align="center">
+
+### Data-driven lending intelligence that helps reduce default losses by up to $47.4M annually
+
+</div>
+
 
 > An end-to-end data analysis project using **32,409 loan applications** to predict defaults, quantify portfolio risk, and deliver actionable lending recommendations — projected to cut expected annual losses by **$47.4M**.
 
