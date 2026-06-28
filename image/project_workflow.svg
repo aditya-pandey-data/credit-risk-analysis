@@ -14,7 +14,7 @@
   <!-- Raw Data -->
   <rect x="60" y="300" width="400" height="180" rx="14" fill="#0d1320" stroke="#4d9fff" stroke-width="3" filter="url(#glow1)"/>
   <text x="260" y="375" fill="#f0f6fc" font-size="30" font-weight="700" text-anchor="middle">Raw Loan Data</text>
-  <text x="260" y="412" fill="#9198a1" font-size="20" text-anchor="middle">32,409 applications, CSV</text>
+  <text x="260" y="412" fill="#9198a1" font-size="20" text-anchor="middle">32,581 applications, CSV</text>
 
   <path d="M460,390 L660,390" stroke="#8b949e" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
 
