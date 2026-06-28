@@ -276,15 +276,16 @@ How this analysis would move from notebook to production lending policy:
 | **4** | 6–12 months | Build an early-warning system, develop intervention strategies, integrate into portfolio management |
 
 ---
+## 🧠 Skills Demonstrated
 
-## 🔮 Future Improvements
-
-- [ ] Address class imbalance with `class_weight='balanced'` or SMOTE to improve defaulter recall
-- [ ] Benchmark against ensemble models (Random Forest, XGBoost, LightGBM)
-- [ ] Add cross-validation and hyperparameter tuning (GridSearchCV)
-- [ ] Convert logistic regression coefficients to odds ratios for clearer stakeholder interpretation
-- [ ] Add SHAP values for per-applicant model explainability
-- [ ] Tune the classification threshold around business cost, rather than the default 0.5 cutoff
+| Skill | Applied In This Project |
+|---|---|
+| Exploratory Data Analysis | Statistical profiling across 12 dimensions — missing value treatment, outlier detection, cross-tabulation of default rate against categorical and numerical features |
+| Predictive Modeling | Logistic Regression with ROC-AUC of 0.78+, evaluated using accuracy, precision, recall, and confusion matrix |
+| Risk Scoring | Converted model probabilities into a 0–100 risk score with three actionable tiers (Low / Medium / High) |
+| Business Translation | Quantified the financial impact of a selective approval strategy — $47.4M in projected annual savings |
+| Data Visualization | Built two stakeholder-facing Tableau dashboards (Executive Overview, Credit Risk Analysis) |
+| Technical
 
 ---
 
