@@ -57,7 +57,7 @@ Lenders need to balance two competing risks: **rejecting good borrowers** (lost 
 
 ## 🔄 Project Workflow
 
-![Project Workflow](./images/project_workflow.png)
+![Project Workflow](./images/project_workflow-2.png)
 
 ---
 ## 📊 Dashboards
