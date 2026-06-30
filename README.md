@@ -2,7 +2,7 @@
 
 # 💳 Credit Risk Analysis & Loan Default Prediction
 
-### An end-to-end data analysis project using 32,581 raw loan applications, cleaned to 32,409 records for predictive modeling, portfolio risk analysis, and deliver actionable lending recommendations — projected to cut expected annual losses by $47.4M.
+### An end-to-end data analysis project using 32,581 raw loan applications, cleaned to 32,409 records for predictive modeling, portfolio risk analysis, and actionable lending recommendations—projected to cut expected annual losses by $47.4M.
 
 [![Python](https://img.shields.io/badge/Python-3.9+-3776AB?style=flat&logo=python&logoColor=white)](https://www.python.org/)
 [![Pandas](https://img.shields.io/badge/Pandas-2.x-150458?style=flat&logo=pandas&logoColor=white)](https://pandas.pydata.org/)
