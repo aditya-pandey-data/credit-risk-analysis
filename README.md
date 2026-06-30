@@ -11,7 +11,7 @@
 [![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-F37626?style=flat&logo=jupyter&logoColor=white)](#-repository-structure)
 
 </div>
-------------------------------------------------------------------------
+
 
 ## 📋 Table of Contents
 
