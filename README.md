@@ -59,7 +59,7 @@ Lenders need to balance two competing risks: **rejecting good borrowers** (lost 
 
 The analysis follows a structured pipeline from raw data to business recommendation — data is loaded and cleaned, explored for risk patterns, used to train a balanced logistic regression model, converted into a 0–100 risk score, visualized in Tableau dashboards, and translated into a quantified business recommendation.
 
-![Project Workflow](./image/project_workflow.svg)
+![Project Workflow](./image/project_workflow.png)
 
 ---
 ## 📊 Dashboards
