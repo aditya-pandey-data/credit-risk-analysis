@@ -1,15 +1,16 @@
-::: {align="center"}
+<div align="center">
+
 # 💳 Credit Risk Analysis & Loan Default Prediction
 
-### An end-to-end data analysis project using 32,581 raw loan applications, cleaned to 32,409 records for predictive modeling, portfolio risk analysis, and deliver actionable lending recommendations --- projected to cut expected annual losses by \$47.4M.
+### An end-to-end data analysis project using **32,581 raw loan applications**, cleaned to **32,409 records** for predictive modeling, portfolio risk analysis, and delivering actionable lending recommendations—projected to cut expected annual losses by **$47.4M**.
 
 [![Python](https://img.shields.io/badge/Python-3.9+-3776AB?style=flat&logo=python&logoColor=white)](https://www.python.org/)
 [![Pandas](https://img.shields.io/badge/Pandas-2.x-150458?style=flat&logo=pandas&logoColor=white)](https://pandas.pydata.org/)
 [![scikit-learn](https://img.shields.io/badge/scikit--learn-1.x-F7931E?style=flat&logo=scikit-learn&logoColor=white)](https://scikit-learn.org/)
 [![Tableau](https://img.shields.io/badge/Tableau-Dashboard-E97627?style=flat&logo=tableau&logoColor=white)](#-dashboards)
 [![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-F37626?style=flat&logo=jupyter&logoColor=white)](#-repository-structure)
-:::
 
+</div>
 ------------------------------------------------------------------------
 
 ## 📋 Table of Contents
